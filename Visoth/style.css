@@ -93,4 +93,17 @@ button {
   margin-bottom: 175px;
 }
 
-/*  */
+/* MAIN CONTENT */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.txt {
+  width: 50%;
+}
+
+.img-main {
+  width: 50%;
+}
