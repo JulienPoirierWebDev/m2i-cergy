@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titre{
+    width: 20%;
+    margin-left: 140px;
+}
+.navli{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-right: 70px;
+    color: rgba(58, 57, 57, 0.886);
+}
+.liste:hover{
+    color: black;
+    cursor: pointer;
+}
+.btn{
+    background-color: white;
+    height: 35px;
+    width: 140px;
+}
+.btn:hover{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    height: 35px;
+    width: 140px;
+    cursor: pointer;
+}
+.hr{
+    border-color: black;
+    width: 140px;
+}
+.baniere{
+    background-color: rgb(95, 14, 171);
+
+
+}
+.brn{
+    display: flex;
+}
+.ban{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+}
