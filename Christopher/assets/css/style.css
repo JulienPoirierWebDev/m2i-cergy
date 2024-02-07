@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.feuille{
+    width: 280px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 8em;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.feuille .omelette img{
+    width: 400px;
+    height: 200px;
+}
