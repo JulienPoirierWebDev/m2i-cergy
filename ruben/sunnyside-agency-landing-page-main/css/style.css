@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    font-family: serif;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "";
+    src: url("../");
+}
+:root{
+    /*Palette*/
+    --colorA: hsl(7, 99%, 70%);
+    --colorB: hsl(51, 100%, 49%);
+    --graphic : hsl(167, 40%, 24%);
+    --photography : hsl(198, 62%, 26%);
+    --footer : hsl(168, 34%, 41%);
+    --neutral-darkblue: hsl(212, 27%, 19%);
+    --neutral-verydarkgrayishblue: hsl(213, 9%, 39%);
+    --neutral-darkgrayishblue: hsl(232, 10%, 55%);
+    --neutral-grayishblue: hsl(210, 4%, 67%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position:fixed;
+    width: 100%;
+}
+nav{width: 30%;}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: var(--neutral-white);
+    font-family: serif;
+}
+#about{
+    background:url("../images/desktop/image-header.jpg") fixed no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+    color:var(--neutral-white)
+}
+.presentation p, .presentation h2, #{
+    max-width: 70%;
+    margin: auto;
+}
+.presentation p{
+    margin:2em auto;
+    font-size: .7em;
+}
+.presentation img, .presentation button{
+    width: 50%;
+}
+.presentation a{
+    display: inline;
+    background: rgba(0,255,255,0);
+    border:none;
+    padding: 0 1em;
+    box-shadow: 0 .5em 5px var(--colorB);
+    width: 25%;
+    margin: 2em 2em;
+    color: var(--neutral-verydarkgrayishblue);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Styles d'attribution fournis par le site*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
