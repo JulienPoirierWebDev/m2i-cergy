@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', serif;
   text-decoration: none;
   list-style: none;
   outline: none;
@@ -12,14 +15,13 @@
 /* ######################### NAVIGATION ################################# */
 
 nav {
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
-  padding: 50px 75px;
+  padding: 50px 75px 0 75px;
   background: #fff;
 }
 
@@ -43,10 +45,12 @@ ul li a:hover {
 
 /* #################### main CONTENT ############################### */
 
-main {
+.content {
   padding: 50px 75px;
 
   display: grid;
+
+  grid-gap: 25px;
 
   grid-template-areas:
     "img img news"
@@ -56,14 +60,24 @@ main {
 
 .imgContent {
   grid-area: img;
+  max-width: 100%;
 }
 
 .title {
   grid-area: title;
+  font-size: 50px;
 }
 
-.contentAction p {
+h1 {
+  margin: 0;
+}
+
+.contentAction {
   grid-area: action;
+}
+
+.news {
+  grid-area: news;
 }
 
 .articles {
