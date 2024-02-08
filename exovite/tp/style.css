@@ -1,13 +1,16 @@
+
+
 #container {
-  height: 500px;
   display: grid;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "section1 section1 section1 aside"
     "section2 section2 section2 aside"
     "section3 section3 section3 section3";
-  gap: 20px;
+
 }
+
+
 
 .navbar {
   grid-area: navbar;
