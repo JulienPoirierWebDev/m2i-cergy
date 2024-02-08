@@ -1,35 +1,52 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  text-decoration: none;
+}
 *{
-  color: red;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 header{
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
 }
-nav{
+nav ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 main{
   display: grid;
-  grid-template-areas: 
-      "illustration illustration new"
-      "h2 call new"
-      "articles articles articles";
+  grid-template-areas: "img img new"
+      "title call new"
+      "cards cards cards";
+}
+img{
+  display: block;
+  width: 10vw;
 }
 .illustration{
-  grid-area: "illustration";
+  grid-area: "img";
   background: gold;
 }
 .new{
   grid-area: "new";
   background: crimson;
 }
-h2{
-  grid-area: "h2";
+.title{
+  grid-area: "title";
   background: seagreen;
 }
 .call{
-  grid-area: "articles";
+  grid-area: "call";
+  background: orange;
+}
+.cards{
+  grid-area: "cards";
   background: royalblue;
 }
