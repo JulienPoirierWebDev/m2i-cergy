@@ -1,0 +1,28 @@
+.premier{
+  background-color: blueviolet;
+  color: white;
+}
+
+.deuxieme{
+  background-color: steelblue;
+  border-radius: 20px;
+  
+}
+
+.troisieme{
+  background-color: rgb(19, 126, 87);
+  border-radius: 20px;
+  
+}
+
+
+.quatrieme{
+  background-color: #10253F;
+  border-radius: 20px;
+  color: white;
+  
+}
+/*.mange__img img{
+  border-radius: 20px;
+max-width: 100%;
+}*/

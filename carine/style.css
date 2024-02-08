@@ -1,0 +1,31 @@
+
+body{
+background-color: bisque;
+}
+
+h2{
+    color: brown;
+}
+
+h3{
+    color: darkmagenta;
+}
+
+.mange__img img{
+border-radius: 20px;
+max-width: 100%;
+/*object-fit: cover;*/
+
+}
+table{
+    width: 10px;
+    height: 20px;
+}
+
+.page_omelette {
+    background-color: white;
+    border-radius: 20px;
+    width: 45%;
+    margin: auto;
+    
+}
