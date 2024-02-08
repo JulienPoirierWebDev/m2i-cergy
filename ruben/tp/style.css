@@ -1,3 +1,15 @@
+:root{
+  --orange: hsl(35, 77%, 62%);
+  --red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+
+  --thin : 400;
+  --regular : 700;
+  --bold : 800;
+}
 @font-face {
   font-family: "Inter";
   src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
@@ -9,6 +21,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-size: 15px;
 }
 header{
   display: grid;
@@ -19,34 +32,73 @@ nav ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
+body{
+  padding: 5rem 10rem;
+}
 main{
   display: grid;
-  grid-template-areas: "img img new"
-      "title call new"
-      "cards cards cards";
-}
-img{
-  display: block;
-  width: 10vw;
+  gap: 2em;
+  grid-template-areas: 
+    "img    img   new"
+    "title  call  new"
+    "cards  cards cards";
 }
 .illustration{
   grid-area: "img";
-  background: gold;
+  width: 100%;
 }
 .new{
   grid-area: "new";
-  background: crimson;
+  padding: 2em;
+  background: var(--very-dark-blue);
+  color: var(--grayish-blue);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.new p{
+  font-size: 2em;
+}
+.new h2{
+  font-weight: var(--bold);
+  font-size: 2.5em;
+}
+.new h3{
+  font-size: 2em;
+}
+.new h3:nth-child(odd){color:var(--off-white);}
+.new aside:nth-child(3) h3, h2{color:var(--orange);}
+.new aside{
+  border-bottom: 1px solid var(--dark-grayish-blue);
 }
 .title{
   grid-area: "title";
-  background: seagreen;
+  color: var(--very-dark-blue);
+}
+h1{
+  font-size: 10em;
 }
 .call{
   grid-area: "call";
-  background: orange;
+  grid-template-rows: 1fr 1fr;
+  font-style: 2em;
 }
-.cards{
+.call button{
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--very-dark-blue);
+  color: var(--off-white);
+}
+.cards figure{
   grid-area: "cards";
   background: royalblue;
+  grid-template-areas: 
+    "img title"
+    "img subtitle"
+    "img description"
+  ;
 }
+.cards img{ grid-area: "img"}
+.cards h3{ grid-area: "title"}
+.cards h4{ grid-area: "subtitle"}
+.cards p{ grid-area: "description"}
