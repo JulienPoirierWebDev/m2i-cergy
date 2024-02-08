@@ -7,7 +7,7 @@ body{
 .feuille{
     width: 280px;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-top: 60px;
     padding: 8em;
     display: flex;
@@ -18,4 +18,16 @@ body{
 .feuille .omelette img{
     width: 400px;
     height: 200px;
+    border-radius: 13px;
+}
+
+/* .part1{
+    display: flex;
+    flex-direction: column;
+} */
+
+.feuillette{
+    width: 100px;
+    height: 200px;
+    background-color: rgba(249, 129, 177, 0.592);
 }
