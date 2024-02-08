@@ -1,6 +1,13 @@
-nav{
+*{
+  color: red;
+}
+header{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+}
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 main{
