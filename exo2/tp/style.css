@@ -50,13 +50,20 @@ main {
 
   grid-template-areas:
     "img img news"
-    "title actions news"
+    "title action news"
     "article article article";
 }
 
 .imgContent {
-  width: 100%;
   grid-area: img;
+}
+
+.title {
+  grid-area: title;
+}
+
+.contentAction p {
+  grid-area: action;
 }
 
 .articles {
