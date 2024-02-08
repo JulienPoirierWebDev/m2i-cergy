@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+/* ######################### NAVIGATION ################################# */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 50px 75px;
+  background: #fff;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+ul li {
+  margin-left: 35px;
+}
+
+ul li a {
+  color: rgb(83, 83, 83);
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+/* #################### main CONTENT ############################### */
+
+main {
+  padding: 50px 75px;
+
+  display: grid;
+
+  grid-template-areas:
+    "img img news"
+    "title actions news"
+    "article article article";
+}
+
+.imgContent {
+  width: 100%;
+  grid-area: img;
+}
+
+.articles {
+  grid-area: article;
+}
