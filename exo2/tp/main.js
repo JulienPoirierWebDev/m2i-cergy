@@ -1,2 +1,2 @@
-import "./node_modules/normalize.css";
-import "./style.css";
+import 'normalize.css'
+import './style.css'
