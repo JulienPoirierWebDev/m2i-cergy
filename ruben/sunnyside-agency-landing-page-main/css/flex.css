@@ -1,0 +1,18 @@
+section{
+}
+img{
+    object-fit: contain;
+}
+.presentation{
+    display: flex;
+}
+.presentation article{
+    display: grid;
+    place-content: center;
+    max-width: 50%;
+    font-size: 3em;
+    color: var(--neutral-verydarkgrayishblue);
+}
+.presentation p{
+    color: var(--neutral-verydarkgrayishblue)
+}
