@@ -1,0 +1,28 @@
+nav{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+main{
+  display: grid;
+  grid-template-areas: 
+      "illustration illustration new"
+      "h2 call new"
+      "articles articles articles";
+}
+.illustration{
+  grid-area: "illustration";
+  background: gold;
+}
+.new{
+  grid-area: "new";
+  background: crimson;
+}
+h2{
+  grid-area: "h2";
+  background: seagreen;
+}
+.call{
+  grid-area: "articles";
+  background: royalblue;
+}
