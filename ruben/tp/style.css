@@ -44,61 +44,95 @@ main{
     "cards  cards cards";
 }
 .illustration{
-  grid-area: "img";
+  grid-area: img;
   width: 100%;
 }
+
+/******************** New ***************************/
 .new{
-  grid-area: "new";
+  grid-area: new;
   padding: 2em;
   background: var(--very-dark-blue);
   color: var(--grayish-blue);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.new p{
-  font-size: 2em;
-}
+.new p{font-size: 1.5rem;}
 .new h2{
-  font-weight: var(--bold);
-  font-size: 2.5em;
+  font-weight: var(--thin);
+  font-size: 2.5rem;
+  color:var(--orange);
 }
-.new h3{
-  font-size: 2em;
-}
+.new h3{font-size: 2rem;}
 .new h3:nth-child(odd){color:var(--off-white);}
-.new aside:nth-child(3) h3, h2{color:var(--orange);}
 .new aside{
   border-bottom: 1px solid var(--dark-grayish-blue);
+  margin: 1em auto;
+  
 }
+
+/*************** title **************/
 .title{
-  grid-area: "title";
+  grid-area: title;
   color: var(--very-dark-blue);
 }
 h1{
-  font-size: 10em;
+  font-size: 6em;
+  font-weight: bold;
 }
+
+/************* Call ******************/
 .call{
-  grid-area: "call";
+  grid-area: call;
   grid-template-rows: 1fr 1fr;
-  font-style: 2em;
+  padding: 2em;
+}
+.call p{
+  font-size: 1.3em;
 }
 .call button{
-  padding: 1em;
+  padding: 1em 2em;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  background: var(--very-dark-blue);
+  letter-spacing: 5px;
+  margin: 3em auto;
+  font-weight: var(--regular);
+  background: var(--red);
   color: var(--off-white);
 }
+
+/****************** cards (broken) ****************************/
+.cards{
+  display: grid;
+  grid-area: cards;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .cards figure{
-  grid-area: "cards";
-  background: royalblue;
+  display: grid;
+  margin: 1em;
   grid-template-areas: 
-    "img title"
-    "img subtitle"
-    "img description"
+    "card-img card-title"
+    "card-img card-subtitle"
+    "card-img card-description"
   ;
 }
-.cards img{ grid-area: "img"}
-.cards h3{ grid-area: "title"}
-.cards h4{ grid-area: "subtitle"}
-.cards p{ grid-area: "description"}
+.cards figure img{ 
+  grid-area: card-img;
+  max-height: 20vh;
+}
+.cards h3, .cards figcaption{
+  margin: 0 1rem;
+}
+.cards figure h3{ 
+  grid-area: card-title;
+  font-size: 3rem;
+  color: var(--grayish-blue);
+  font-weight: var(--bold);
+}
+.cards figure h4{
+  grid-area: card-subtitle;
+  margin: 1rem auto;
+  font-weight: var(--bold);
+}
+.cards figure p{ grid-area: card-description;}
+
+/**/
