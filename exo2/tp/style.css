@@ -32,11 +32,12 @@ ul {
 }
 
 ul li {
-  margin-left: 35px;
+  margin-left: 75px;
 }
 
 ul li a {
   color: rgb(83, 83, 83);
+  font-size: 25px;
 }
 
 ul li a:hover {
@@ -50,9 +51,12 @@ ul li a:hover {
   display: grid;
   grid-gap: 25px;
   grid-template-areas:
-    "img img img news"
-    "title action action news"
-    "article article article article";
+    "img img news"
+    "title action news"
+    "article article article";
+
+  /* grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; */
 }
 
 .imgContent {
@@ -62,26 +66,51 @@ ul li a:hover {
 
 .title {
   grid-area: title;
-  max-width: 100%;
-  font-size: 30px;
-  padding-right: 50px;
 }
 
 h1 {
-  margin: 0;
+  margin-top: 0;
+  font-size: 75px;
 }
 
 .contentAction {
   grid-area: action;
-  max-width: 100%;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+button {
+  background: black;
+  margin-top: 10%;
+  width: 300px;
+  height: 75px;
+}
+
+button a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+button a:hover {
+  color: hsl(35, 77%, 62%);
 }
 
 .news {
   grid-area: news;
-  background-color: black;
+  background: hsl(240, 100%, 5%);
+  color: white;
 }
 
 .articles {
+  display: flex;
   grid-area: article;
+}
+
+.article {
+  display: flex;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
 }
