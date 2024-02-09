@@ -1,96 +1,77 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  background-color:hsl(210, 46%, 95%);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.main{
+  max-width: 75%;
+  margin: auto;
+  display: grid;
+  /* grid-template-areas: 
+    "testi1 testi1 testi2 testi5"
+    "testi3 testi4 testi4 testi5";*/
+
+  grid-template-columns: repeat(4,1fr); /*crée 4 colonnes de même taille*/
+  grid-template-rows: repeat(2,1fr);  /*crée 2 lignes de même taille*/
+  grid-gap: 20px;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+
+.Daniel{
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1 / 3; /* s'étend de la colonne 1 à la colonne 2*/
+  grid-row: 1 ; /*reste à la ligne 1*/
+  color: white;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.Jonathan{
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3;
+  grid-row: 1 ;
+  color: white;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.Jeannette{
+  background-color:hsl(0, 0%, 100%) ;
+  grid-column: 1;
+  grid-row: 2 ;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.Patrick{
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+  grid-column: 2 / 4;
+  grid-row: 2 ;
 }
 
-.card {
-  padding: 2em;
+.Kira{
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4;
+  grid-row: 1 / 3 ; /* s'étend de la ligne 1 à la ligne 2*/
 }
 
-.read-the-docs {
-  color: #888;
+.main > div {
+  border-radius: 1%;
+  padding: 10px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+img{
+  border-radius: 50%;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+span{
+  display: block;
 }
+
+.name{
+  font-weight: 600;
+}
+
+.graduate{
+  font-style: italic;
+}
+
+p{
+  font-weight: 600;
+}
+
