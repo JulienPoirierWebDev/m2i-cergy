@@ -126,6 +126,7 @@ button a:hover {
 .titleArt {
   margin-top: 25px;
   font-size: large;
+  font-weight: bolder;
 }
 
 .titleArt a:hover {
