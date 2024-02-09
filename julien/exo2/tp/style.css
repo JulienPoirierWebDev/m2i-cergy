@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: hsl(263, 55%, 52%);
+  --color2: hsl(217, 19%, 35%);
+  --color3: hsl(219, 29%, 14%);
+  --color4: hsl(0, 0%, 100%);
+  --color5: hsl(0, 0%, 81%);
+  --color6: hsl(210, 46%, 95%);
+
+  --padding-small: 2%;
+  --padding-large: 10%;
+
+  --font-size: 13px;
+  color-scheme: light dark;
+}
+
+@font-face {
+  font-family: "barlow";
+  src: url("./public/fonts/BarlowSemiCondensed-Regular.ttf");
+}
+
+/* ------ APP -------*/
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  #app {
+    background-color: var(--color4);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #app {
+    background-color: var(--color6);
+  }
+}
+/* ------ APP END -------*/
+
+/* ------ GRID PARAMS & ZONING -------*/
+
+.grid {
+  font-family: "barlow";
+  display: grid;
+  gap: 30px;
+
+  width: 1200px;
+  /* grid-template-areas: "test1" "test2" "test3" "test4" "test5"; */
+  grid-template-areas:
+    "testi1 testi1 testi2 testi5"
+    "testi3 testi4 testi4 testi5";
+
+  grid-template-columns: 1fr 1fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.testimonial {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.testimonial-1 {
+  grid-area: testi1;
+  background-color: var(--color1);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 85% 0%;
+
+  color: var(--color4);
+}
+
+.testimonial-2 {
+  grid-area: testi2;
+  background-color: var(--color2);
+  color: var(--color4);
+}
+
+.testimonial-3 {
+  grid-area: testi3;
+  background-color: var(--color4);
+}
+
+.testimonial-4 {
+  grid-area: testi4;
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+.testimonial-5 {
+  grid-area: testi5;
+  background-color: var(--color5);
+}
+
+@media print {
+  * {
+    color: black;
+    background-color: white;
+  }
+  #app {
+    min-width: auto;
+    min-height: auto;
+  }
+
+  .grid {
+    grid-template-areas: "testi1" "testi2" "testi3" "testi4" "testi5";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    margin-block: 40px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #app {
+    min-width: auto;
+    min-height: auto;
+  }
+
+  .grid {
+    grid-template-areas: "testi1" "testi2" "testi3" "testi4" "testi5";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    margin-block: 40px;
+  }
+}
+
+/* ------ END GRID PARAMS & ZONING -------*/
+
+/* ---------------- TESTIMONIAL ELEMENTS --------------------*/
+
+/* ------ TESTI IDENTITY -------*/
+
+.testimonial__identity {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.testimonial__identity div:nth-child(2) * {
+  margin-block: 5px;
+}
+
+.testimonial__identity div:nth-child(1) {
+  border-radius: 100%;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--color1);
+}
+
+.testimonial__identity div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------ END TESTI IDENTITY -------*/
+
+/* ------ TESTI QUOTES-BLOCK -------*/
+
+.testimonial__quotes-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.testimonial__quotes-block blockquote {
+  font-size: 15px;
+  line-height: 1.3rem;
+}
+
+.testimonial__quotes-block h2 {
+  font-size: 20px;
+  margin-block: 30px;
+}
+
+/* ------ END TESTI QUOTES-BLOCK -------*/
+
+/* ---------------- END TESTIMONIAL ELEMENTS --------------------*/
