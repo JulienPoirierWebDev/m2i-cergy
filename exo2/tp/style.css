@@ -79,7 +79,7 @@ h1 {
 }
 
 button {
-  background: black;
+  background: hsl(240, 100%, 5%);
   margin-top: 10%;
   width: 300px;
   height: 75px;
@@ -108,9 +108,31 @@ button a:hover {
 
 .article {
   display: flex;
+  gap: 25px;
 }
 
 .articleContent {
   display: flex;
   flex-direction: column;
+}
+
+.numArt {
+  margin-top: 10px;
+  font-size: 50px;
+  color: hsl(236, 13%, 42%);
+  font-weight: bolder;
+}
+
+.titleArt {
+  margin-top: 25px;
+  font-size: large;
+}
+
+.titleArt a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.contentArt {
+  margin-top: 25px;
+  font-size: xx-large;
 }
