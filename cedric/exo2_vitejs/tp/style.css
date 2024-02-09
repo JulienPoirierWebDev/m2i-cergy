@@ -24,3 +24,12 @@ header nav h1 {
     color: black;
 }
 
+header nav .madroite{
+    display: flex;
+    align-items: center;
+}
+
+header nav .madroite p {
+    margin : 0 15px 0 0;
+    color: #ccc;
+}
