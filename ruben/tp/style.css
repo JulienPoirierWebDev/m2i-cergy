@@ -26,16 +26,19 @@
 header{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1em;
+  padding: 3em 0;
 }
 nav ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: right;
 }
+nav a{ color: var(--dark-grayish-blue); transition: .5s;}
+nav a:hover{ color: var(--orange);}
 body{
-  padding: 5rem 10rem;
+  padding: 2rem 10rem;
 }
-main{
+#homepage{
   display: grid;
   gap: 2em;
   grid-template-areas: 
@@ -51,25 +54,26 @@ main{
 /******************** New ***************************/
 .new{
   grid-area: new;
-  padding: 2em;
+  padding: 0 2em;
   background: var(--very-dark-blue);
   color: var(--grayish-blue);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.new p{font-size: 1.5rem;}
+.new p{font-size: 1.5rem; margin: 1em 0;}
 .new h2{
-  font-weight: var(--thin);
-  font-size: 2.5rem;
+  font-weight: var(--regular);
+  font-size: 3rem;
   color:var(--orange);
+  line-height: 3em;
 }
-.new h3{font-size: 2rem;}
-.new h3:nth-child(odd){color:var(--off-white);}
+.new h3{font-size: 2rem;color:var(--off-white); transition: .5s;}
+.new h3:hover{color:var(--orange); cursor: pointer;}
 .new aside{
   border-bottom: 1px solid var(--dark-grayish-blue);
-  margin: 1em auto;
-  
+  margin-bottom: 1.5em;
 }
+.new aside:last-of-type{border-bottom: none;}
 
 /*************** title **************/
 .title{
@@ -77,18 +81,20 @@ main{
   color: var(--very-dark-blue);
 }
 h1{
-  font-size: 6em;
-  font-weight: bold;
+  font-size: 5.5em;
+  line-height: 5.3rem;
+  font-weight: var(--bold);
 }
 
 /************* Call ******************/
 .call{
   grid-area: call;
   grid-template-rows: 1fr 1fr;
-  padding: 2em;
+  padding: 0 2em;
 }
 .call p{
-  font-size: 1.3em;
+  font-size: 1.2em;
+  color:var(--dark-grayish-blue)
 }
 .call button{
   padding: 1em 2em;
@@ -98,8 +104,13 @@ h1{
   font-weight: var(--regular);
   background: var(--red);
   color: var(--off-white);
+  transition: .5s;
 }
-
+.call button:hover{
+  background:var(--very-dark-blue);
+  color: var(--off-white);
+  cursor: pointer;
+}
 /****************** cards (broken) ****************************/
 .cards{
   display: grid;
@@ -130,9 +141,29 @@ h1{
 }
 .cards figure h4{
   grid-area: card-subtitle;
+  font-size: 1.3rem;
   margin: 1rem auto;
   font-weight: var(--bold);
 }
-.cards figure p{ grid-area: card-description;}
+.cards figure h4:hover{ color: var(--orange); cursor: pointer;}
+.cards figure p{
+  grid-area: card-description;
+  color: var(--dark-grayish-blue);
+}
 
-/**/
+/* attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+footer {
+  position: relative;
+  bottom:-3em;
+  left:0;
+  width: 100%;
+  opacity: .3;
+  transition: .3s;
+}
+footer:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
