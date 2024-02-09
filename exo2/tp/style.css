@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+/* ######################### NAVIGATION ################################# */
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 50px 75px 0 75px;
+  background: #fff;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+ul li {
+  margin-left: 35px;
+}
+
+ul li a {
+  color: rgb(83, 83, 83);
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+/* #################### main CONTENT ############################### */
+
+.content {
+  padding: 50px 75px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas:
+    "img img img news"
+    "title action action news"
+    "article article article article";
+}
+
+.imgContent {
+  grid-area: img;
+  max-width: 100%;
+}
+
+.title {
+  grid-area: title;
+  max-width: 100%;
+  font-size: 30px;
+  padding-right: 50px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.contentAction {
+  grid-area: action;
+  max-width: 100%;
+  font-size: 20px;
+}
+
+.news {
+  grid-area: news;
+  background-color: black;
+}
+
+.articles {
+  grid-area: article;
+}
