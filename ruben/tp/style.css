@@ -28,6 +28,7 @@ header{
   grid-template-columns: 1fr 1fr;
   padding: 3em 0;
 }
+
 nav ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -167,3 +168,92 @@ footer:hover{
   opacity: 1;
   transform: scale(1.1);
 }
+
+
+/********** RWD ***********/
+
+.responsive-header{
+  display: none;
+}
+.responsive-header .closeMenu{
+  z-index: 100;
+}
+@media screen and (max-width : 1440px){
+  body{
+    padding: 0;
+  }
+  #homepage{ 
+    grid-template-areas: 
+    "img"
+    "new"
+    "title" 
+    "call"
+    "cards";
+  }
+  .cards{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  header>nav{
+    display: none;
+  }
+  .responsive-header{
+    padding: 1em;
+    display: grid;
+    place-content: end;
+  }
+  .responsive-header nav img{
+  position: relative;
+  left:-3em;
+  background: blue;
+  z-index: 100;
+  }
+  .responsive-header nav{
+    width: 70%;
+    position: fixed;
+    left: 10rem;
+    top: 0;
+    height:100%;
+    width:90%;
+    background: var(--off-white);
+    text-align: center;
+    padding: 0;
+  }
+  .responsive-header nav ul{
+    display: grid;
+    padding-right: 2em;
+    height: 100%;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  details, summary{
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+/*****
+@media (prefers-color-scheme: dark){
+  :root{   
+    --off-white: hsl(36, 100%, 99%);
+    --off-white: hsl(240, 100%, 5%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --very-dark-blue: hsl(36, 100%, 99%);
+  }
+  body{
+    background: var(--off-white);
+  }
+  .new{
+    color-scheme: only light;
+  }
+}
+@media (prefers-color-scheme: light){
+  :root{   
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+  }
+}
+/**/
