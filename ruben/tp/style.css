@@ -9,6 +9,8 @@
   --thin : 400;
   --regular : 700;
   --bold : 800;
+
+  color-scheme: dark;
 }
 @font-face {
   font-family: "Inter";
@@ -157,16 +159,18 @@ h1{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 footer {
-  position: relative;
-  bottom:-3em;
+  position: fixed;
+  bottom:-1em;
+  height: 2em;
   left:0;
   width: 100%;
   opacity: .3;
   transition: .3s;
+  overflow-x: hidden;
 }
-footer:hover{
+footer:hover, footer p{
+  height:5em;
   opacity: 1;
-  transform: scale(1.1);
 }
 
 
@@ -204,24 +208,25 @@ footer:hover{
   }
   .responsive-header nav img{
   position: relative;
-  left:-3em;
-  background: blue;
+  right: 47%;
+  top: 0;
   z-index: 100;
   }
   .responsive-header nav{
     width: 70%;
     position: fixed;
-    left: 10rem;
+    right: 0;
     top: 0;
     height:100%;
     width:90%;
-    background: var(--off-white);
+    background: rgba(255,255,255,.5);
+    backdrop-filter: blur(4px);
     text-align: center;
-    padding: 0;
+    padding: 2em 0;
   }
   .responsive-header nav ul{
     display: grid;
-    padding-right: 2em;
+    padding: 2em;
     height: 100%;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -231,29 +236,5 @@ footer:hover{
     cursor: pointer;
   }
 }
-/*****
-@media (prefers-color-scheme: dark){
-  :root{   
-    --off-white: hsl(36, 100%, 99%);
-    --off-white: hsl(240, 100%, 5%);
-    --grayish-blue: hsl(233, 8%, 79%);
-    --dark-grayish-blue: hsl(236, 13%, 42%);
-    --very-dark-blue: hsl(240, 100%, 5%);
-    --very-dark-blue: hsl(36, 100%, 99%);
-  }
-  body{
-    background: var(--off-white);
-  }
-  .new{
-    color-scheme: only light;
-  }
-}
-@media (prefers-color-scheme: light){
-  :root{   
-    --off-white: hsl(36, 100%, 99%);
-    --grayish-blue: hsl(233, 8%, 79%);
-    --dark-grayish-blue: hsl(236, 13%, 42%);
-    --very-dark-blue: hsl(240, 100%, 5%);
-  }
-}
-/**/
+
+/* fin */
