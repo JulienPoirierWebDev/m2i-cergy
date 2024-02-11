@@ -38,7 +38,7 @@
 
 .navbar {
   grid-area: navbar;
-  height : 100px;
+ 
 }
 
 .section1 {
@@ -147,7 +147,7 @@
 nav{
   display: flex;
   justify-content: space-between;
-  height : 100px;
+  height : 70px;
   align-items : center;
 }
 
