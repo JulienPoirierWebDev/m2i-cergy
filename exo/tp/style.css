@@ -1,28 +1,52 @@
-.premier{
-  background-color: blueviolet;
-  color: white;
+.container{
+  display: grid;
+  background-color: rebeccapurple;
+  /*grid-template-columns: repeat(3,300px);
+  grid-template-rows: 2fr 1fr 1fr;*/
 }
 
-.deuxieme{
-  background-color: steelblue;
-  border-radius: 20px;
+.premier_daniel{
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
   
 }
 
-.troisieme{
+.deux_walter{
+  background-color: rgb(154, 108, 70);
+  border-radius: 20px;
+  
+  
+}
+
+.trois_jeanette{
   background-color: rgb(19, 126, 87);
   border-radius: 20px;
   
 }
 
 
-.quatrieme{
+.quatre_patrick{
   background-color: #10253F;
   border-radius: 20px;
   color: white;
   
 }
-/*.mange__img img{
+
+.cinq_kira{
+  background-color: rgb(124, 23, 111);
   border-radius: 20px;
+  /*min-width: 100%;*/
+}
+.mange__img img{
+  border-radius: 100%;
+
+}
+div{
 max-width: 100%;
-}*/
+}
+
+.items_nom {
+  display: flex;
+  text-align: left;
+}

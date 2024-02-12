@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+display: flex;
+justify-content: center;
+gap: 15px;
+padding: 5px;
+
+}
+
+.container li{
+list-style: none;
+}
+nav{
+
+background-color: beige;
+width: 100vw;
+}
+.image{
+min-width: 100%;
+}
+.image img{
+width: 100%;
+
+}
+.Maraicher>*:first-child {
+    align-self: stretch;
+background-color: rgb(153, 151, 151);
+color: white;
+text-align: center;
+.box
+    
+  }
+
+
+.fruit__legumes{
+background-color: rgb(216, 216, 163);
+}
+.items-1{
+    background-color: red);
+}
