@@ -1,0 +1,72 @@
+
+body{
+  background-color: gray;
+}
+:root {
+  --color1: hsl(36, 100%, 99%);
+  --color2: hsl(233, 8%, 79%);
+  --color3: hsl(236, 13%, 42%);
+  --color4: hsl(240, 100%, 5%);
+}
+
+.nav_bar{
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+ 
+}
+
+.item_nav {
+  display: inline-block;
+  
+}
+.main{
+  max-width: 80%;
+  margin: auto;
+  font-size: 15px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+  " item1 item1 item4"
+  "item2 item3 item4"
+  "item5 item6 item7";
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.image_item1{
+  grid-area: item1;
+}
+
+.image_item1 img{
+  width: 100%;
+}
+
+.question_item2{
+  grid-area: item2;
+  font-weight: 800px;
+  color: var(--color4);
+}
+
+.info_item3{
+  grid-area: item3;
+}
+
+.new_item4{
+  grid-area: item4;
+  background-color: var(--color4);
+  color: white;
+}
+
+.pc_item5{
+  grid-area: item5;
+}
+
+.laptop_item6{
+  grid-area: item6;
+}
+.gaming_item7{
+  grid-area: item7;
+}
