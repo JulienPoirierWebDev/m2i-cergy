@@ -1,9 +1,0 @@
-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-header ul{
-    display: flex;
-    justify-content: space-around;
-}
