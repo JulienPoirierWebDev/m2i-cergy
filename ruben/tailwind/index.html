@@ -4,116 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Import de Tailwind parce cbon sayer -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!---->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Insure landing page</title>
 <script type="module" src="main.js"></script>
   </head>
-  <body>
-    <header class="flex justify-around">
-      <img src="images/logo.svg" alt="logo" class="logo">
+  <body class="scroll-smooth font-Karla">
+    <header class="flex justify-between bg-white z-10 fixed w-screen px-28">
+      <img src="images/logo.svg" alt="logo" class="logo p-10">
       <nav>
-        <ul class="flex space-around">
-          <li class="underline">How we work</li>
-          <li>Blog</li>
-          <li>Account</li>
-          <li class="border">View plans</li>
+        <ul class="flex  items-center justify-around gap-5">
+          <li><a href="#more" class="uppercase">How we work</a></li>
+          <li><a href="#" class="uppercase">Blog</a></li>
+          <li><a href="#" class="uppercase">Account</a></li>
+          <li><button class="border px-5 py-2 my-5 uppercase">View plans</button></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="hero">
-        <h1 class="headings">Humanizing your insurance.</h1>
-        <p>Get your life insurance coverage easier and faster. We blend our expertise 
-        and technology to help you find the plan that’s right for you. Ensure you 
-        and your loved ones are protected.</p>
-        <button>View plans</button>
-        <img src="images/bg-pattern-how-we-work-desktop.svg" alt="A Family walking towards left">
+      <section id="hero" class="min-h-screen text-white">
+        <div class="bg-gradient h-[70vh] grid place-center">
+          <hr class="mt-[10em] ml-[8%] w-36" >
+          <article class="w-[45vw] ml-[8%]">
+            <h1 class="text-7xl font-DM">Humanizing your insurance.</h1>
+            <p class="text-xl">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+            <button class="border px-5 py-2 my-5 uppercase">View plans</button>
+          </article>
+            <img src="images/image-intro-desktop.jpg" alt="A Family walking towards left" class="absolute bottom-8 right-3 max-w-none -translate-x-1/2 -translate-y-3">
+            <img src="images/bg-pattern-intro-left-desktop.svg" alt="A Family walking towards left" class="absolute bottom-8 left-0 max-w-none">
+          <img src="images/bg-pattern-intro-right-desktop.svg" alt="A Family walking towards left" class="absolute top-0 right-0 z-0">
+        </div>
       </section>
       <section id="about">
-        <h2>We’re different</h2>
-        <article class="cards">
-          <figure>
-            <img src="images/icon-snappy-process.svg" alt="Lighting bolt icon">
-            <figcaption>
-              <h3>Snappy Process</h3>
+        <hr class="mt-[10em] ml-[8%] w-36 pb-36">
+        <h2 class="text-7xl ml-[8%]">We’re different</h2>
+        <article class="cards flex space-around ml-[8%]">
+          <figure class="m-20 text-center">
+            <img class="center mx-auto" src="images/icon-snappy-process.svg" alt="Lighting bolt icon">
+            <figcaption class="text">
+              <h3 class="headings font-DM">Snappy Process</h3>
               <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
             </figcaption>
           </figure>
-          <figure>
-            <img src="images/icon-affordable-prices.svg" alt="Dollar icon">
-            <figcaption>
+          <figure class="m-20 text-center">
+            <img class="center mx-auto" src="images/icon-affordable-prices.svg" alt="Dollar icon">
+            <figcaption class="text">
               <h3>Affordable Prices</h3>
               <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
             </figcaption>
           </figure>
-          <figure>
-            <img src="images/icon-people-first.svg" alt="People illustration">
-            <figcaption>
+          <figure class="m-20 text-center">
+            <img class="center mx-auto" src="images/icon-people-first.svg" alt="People illustration">
+            <figcaption class="text">
               <h3>People First</h3>
               <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
             </figcaption>
           </figure>
         </article>
-      
-    
       </section>
-      <section id="more">
-        <h2>Find out more about how we work</h2>
-        <button class="border">How we work</button>
+      <section id="more" class="bg-gradient flex space-around m-auto w-9/12 text-white">
+        <h2 class="text-7xl py-20 ml-20">Find out more about how we work</h2>
+        <button class="border-2 relative left-[15vw] top-[17vh] w-[40vw] h-20 text-5xl z-10">How we work</button>
+        <img src="images/bg-pattern-how-we-work-desktop.svg" alt="A Family walking towards left" class="relative left-[0] m-h-100">
       </section>
     </main>
-    <footer>
-      <article class="socials">
-        <img src="images/logo.svg" alt="Logo Insure" class="logo">
-        <aside>
-          <img src="images/icon-facebook.svg" alt="Facebook" class="logo">
-          <img src="images/icon-twitter.svg" alt="Twitter" class="logo">
-          <img src="images/icon-pinterest.svg" alt="Pinterest" class="logo">
-          <img src="images/icon-instagram.svg" alt="Instagram" class="logo">
+    <footer class="w-screen py-5 my-36 bg-grayish m-w-screen;">
+      <article id="socials" class="flex justify-between w-screen px-28">
+        <img class="absolute left-0" src="images/bg-pattern-footer-desktop.svg" alt="">
+        <img src="images/logo.svg" alt="Logo Insure" class="logo w-100">
+        <aside class="flex space-between">
+          <img class="px-2" src="images/icon-facebook.svg" alt="Facebook" class="logo">
+          <img class="px-2" src="images/icon-twitter.svg" alt="Twitter" class="logo">
+          <img class="px-2" src="images/icon-pinterest.svg" alt="Pinterest" class="logo">
+          <img class="px-2" src="images/icon-instagram.svg" alt="Instagram" class="logo">
         </aside>
       </article>
-      <article class="footerElts">
-        <aside class="card">
+      <hr class="mt-5 ml-[8%] w-[85vw]" >
+      <article class="flex justify-between bg-grayish z-10 w-screen px-28 py-24">
+        <aside>
           <h3>Our company</h3>
-      
-          <a href="#">How we work</a>
-          <a href="#">Why Insure?</a>
-          <a href="#">View plans</a>
-          <a href="#">Reviews</a>
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Why Insure?</a></li>
+            <li><a href="#">View plans</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
         </aside>
-        <aside class="card">
+        <aside class="">
           <h3>Help me</h3>
-      
-          <a href="#">FAQ</a>
-          <a href="#">Terms of use?</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Cookies</a>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms of use?</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
         </aside>
         <aside>
           <h3>Contact</h3>
-          <a href="">Sales</a>
-          <a href="">Support</a>
-          <a href="">Live chat</a>
+          <ul>
+            <li><a href="">Sales</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Live chat</a></li>
+          </ul>
         </aside>
         <aside>
           <h3>Others</h3>
-          <a href="">Careers</a>
-          <a href="">Press</a>
-          <a href="">Licenses</a>
+          <ul>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Licenses</a></li>
+          </ul>
         </aside>
       </article>  
-      <div class="attribution">
+      <div class="attribution backdrop-blur-lg shadow-xl p-5">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://mistertea.fr">Ruben &copy; mistertea.fr</a>.
       </div>
-      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-      <style>
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-        </style>
     </footer>
   </body>
 </html>

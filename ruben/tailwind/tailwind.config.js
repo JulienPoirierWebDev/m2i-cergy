@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./{html,js}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{"DM": ['DM', "arial", "serif"], 'Karla': ["Karla", "arial", "sans-serif"]}
+    },
   },
   plugins: [],
 }
-

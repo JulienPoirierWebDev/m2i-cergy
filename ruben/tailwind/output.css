@@ -20,10 +20,6 @@
   --DarkGrayishViolet: hsl(273, 4%, 51%);
   --VeryLightGray: hsl(0, 0%, 98%);
 }
-.headings{
-  font-weight: var(--regular);
-  font-family: "DM Serif Display";
-}
 *{
   font-weight: var(--regular);
   font-family: "Karla";

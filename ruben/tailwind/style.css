@@ -24,7 +24,16 @@
   font-weight: var(--regular);
   font-family: "DM Serif Display";
 }
+.bg-grayish{ background : var(--VeryLightGray);}
+.bg-veryDarkViolet{
+  background: var(--GrayishBlue);
+}
+.bg-gradient{
+  background: var(--GrayishBlue);
+  background: steelblue;
+}
 *{
   font-weight: var(--regular);
-  font-family: "Karla";
 }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
