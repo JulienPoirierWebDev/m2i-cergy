@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+/* ######################### NAVIGATION ################################# */
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 50px 75px 0 75px;
+  background: #fff;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+ul li {
+  margin-left: 75px;
+}
+
+ul li a {
+  color: rgb(83, 83, 83);
+  font-size: 25px;
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+/* #################### main CONTENT ############################### */
+
+.content {
+  padding: 50px 75px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas:
+    "img img news"
+    "title action news"
+    "article article article";
+
+  /* grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr; */
+}
+
+.imgContent {
+  grid-area: img;
+  max-width: 100%;
+}
+
+.title {
+  grid-area: title;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 75px;
+}
+
+.contentAction {
+  grid-area: action;
+  font-size: 30px;
+}
+
+button {
+  background: hsl(240, 100%, 5%);
+  margin-top: 10%;
+  width: 300px;
+  height: 75px;
+}
+
+button a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+button a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.news {
+  grid-area: news;
+  background: hsl(240, 100%, 5%);
+  color: white;
+}
+
+.articles {
+  display: flex;
+  grid-area: article;
+}
+
+.article {
+  display: flex;
+  gap: 25px;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.numArt {
+  margin-top: 10px;
+  font-size: 50px;
+  color: hsl(236, 13%, 42%);
+  font-weight: bolder;
+}
+
+.titleArt {
+  margin-top: 25px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.titleArt a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.contentArt {
+  margin-top: 25px;
+  font-size: xx-large;
+}
