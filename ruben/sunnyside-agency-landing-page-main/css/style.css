@@ -1,0 +1,200 @@
+/*********************** Référence **************************/
+
+@font-face {
+    font-family: "barlow";
+    src: url("../fonts/barlow/Barlow-SemiBold.ttf");
+}
+@font-face {
+    font-family: "fraunces";
+    src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+:root{
+    /*Palette*/
+    --colorA: hsl(7, 99%, 70%);
+    --colorB: hsl(51, 100%, 49%);
+    --graphic : hsl(167, 40%, 24%);
+    --photography : hsl(198, 62%, 26%);
+    --footer : hsl(168, 34%, 41%);
+    --neutral-darkblue: hsl(212, 27%, 19%);
+    --neutral-verydarkgrayishblue: hsl(213, 9%, 39%);
+    --neutral-darkgrayishblue: hsl(232, 10%, 55%);
+    --neutral-grayishblue: hsl(210, 4%, 67%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+/********************** Styles Généraux **************************/
+*{
+    margin:0;
+    font-family: "fraunces";
+    list-style: none;
+    text-decoration: none;
+    Font-size: 18px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: "barlow";
+    font-size: 5em;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position:fixed;
+    width: 100%;
+}
+nav{min-width: 30%;}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: var(--neutral-white);
+    font-family: serif;
+    transition: .5s;
+}
+nav a[href="#contact"]{
+    padding: .8em;
+    border-radius: 30px;
+    background: rgba(255,255,255,.8);
+}
+.logo{
+    fill:#FFF;
+    transition: .5s;
+}
+/***************** Hero Section ****************************/
+#about{
+    background:url("../images/desktop/image-header.jpg") fixed no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+    color:var(--neutral-white)
+}
+
+/*********** Presentation ***********/
+/* grid initiative *
+.presentation{
+    display: grid;
+    place-items: center;
+}
+/**/
+.presentation p, .presentation h2{
+    max-width: 80%;
+    margin: auto;
+}
+.presentation h2{
+    font-size: 2rem;
+    text-align: left;
+}
+.presentation p{
+    margin:2em auto;
+    font-size: .7em;
+}
+.presentation img{
+    width: 100%;
+}
+.presentation a{
+    display: inline;
+    background: rgba(0,255,255,0);
+    border:none;
+    padding: 0 1em;
+    box-shadow: 0 .5em 5px var(--colorB);
+    width: 40%;
+    margin: 0 2em;
+    color: var(--neutral-verydarkgrayishblue);
+    font-family: "ba";
+    font-size: 2rem;
+}
+
+.presentation img{
+    object-fit: cover;
+}
+.presentation{
+    display: flex;
+    margin: 3em;
+}
+.presentation article{
+    display: grid;
+    place-content: center;
+    font-size: 3em;
+    color: var(--neutral-verydarkgrayishblue);
+}
+.presentation p{
+    color: var(--neutral-verydarkgrayishblue)
+}
+
+/*********************** Projects *******************************/
+#projects{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    width: 70%;
+    margin: auto;
+    color:var(--neutral-verydarkgrayishblue);
+}
+#projects article{
+    min-width: 50vmax;
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat;
+    background-size: cover;
+}
+
+#projects article:last-of-type{
+    background: url("../images/desktop/image-photography.jpg") no-repeat;
+}
+
+/********************* Testimonials *******************/
+#testimonials h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 3em auto
+}
+#testimonials figure{
+    max-width: 20%;
+    text-align: center;
+    margin: 3em auto;
+}
+#testimonials .name{color:var(--neutral-verydarkgrayishblue); font-size: 1.5em;}
+#testimonials .role{color:var(--neutral-grayishblue);}
+#testimonials article{
+    display: flex;
+    justify-content: space-around;
+}
+#testimonials p{
+    margin: 1em auto;
+    color: var()
+}
+#testimonials img{border-radius: 50%;}
+#goodbye{
+    display: flex;
+}
+#goodbye img{
+    max-width: 25%;
+}
+footer article{
+    background: var(--footer);
+    text-align: center;
+    min-height: 30vh;
+    display: grid;
+    place-content: center;
+
+}
+footer nav,#contacts{
+    margin: 1em auto;
+
+}
+footer nav ul{
+    min-width: 50%;
+    gap : 2em;
+}
+
+/*
+@media screen and (max-width : 375px){
+    *{
+        flex-wrap: wrap;
+    }
+}
+
+/*Styles d'attribution fournis par le site*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
