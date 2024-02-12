@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titre{
+    margin-left: 140px;
+}
+.navli{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-right: 70px;
+    color: rgba(58, 57, 57, 0.886);
+}
+.liste:hover{
+    color: black;
+    cursor: pointer;
+}
+.btn{
+    background-color: white;
+    height: 35px;
+    width: 140px;
+    border: 1px solid;
+}
+.btn:hover{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    height: 35px;
+    width: 140px;
+    cursor: pointer;
+}
+.hr{
+    border-color: white;
+    width: 140px;
+    margin-left: 0px;
+}
+.baniere{
+    background-color: rgb(40, 6, 73);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 610px;
+
+}
+.bnr{
+    display: flex;
+}
+.ban{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 100px;
+    color: white;
+    font-size: larger;
+}
+.imgban{
+    margin-right: 200px;
+    margin-top: 100px;
+}
+.svgright{
+    position: absolute;
+}
+.svgleft{
+    position: absolute;
+    margin-top: 400px;
+}
+.containertwo{
+    margin-top: 260px;
+    margin-right: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.hrr{
+    width: 150px;
+}
+.parent{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.containerthree{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-left: 140px;
+}
+.miniban{
+    background-color:rgb(40, 6, 73) ;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    margin-left: 15%;
+    height: 200px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.imgminiban{
+    margin-right: -20px;
+
+}
+.btnminiban{
+    background-color: white;
+    height: 35px;
+    width: 140px;
+    border: 1px solid;
+    margin-left: 450px;
+    position: absolute;
+}
+.btnminiban:hover{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    height: 35px;
+    width: 140px;
+    cursor: pointer;
+}
+.titreban{
+    font-size: 60px;
+    color: rgb(228, 227, 223);
+}
+.footer{
+    background-image: url(img/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.firstlogofoot{
+    height: 19px;
+}
+.firstfoot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.hrfooter{
+    width: 70%;
+}
+.scndfoot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.logofoot{
+    cursor: pointer;
+}
+.logofoot:hover{
+    filter: brightness(20%);
+}
+.listefoot{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.lifoot:hover{
+    text-decoration: underline;
+    color: rgb(47, 46, 46);
+}
+.divfootlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hfoot{
+    color: rgb(110, 108, 103);
+}
