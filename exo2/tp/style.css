@@ -55,8 +55,8 @@ ul li a:hover {
     "title action news"
     "article article article";
 
-  /* grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr 1fr; */
+
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .imgContent {
@@ -102,8 +102,10 @@ button a:hover {
 }
 
 .articles {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-area: article;
+  gap: 24px;
 }
 
 .article {
@@ -125,8 +127,7 @@ button a:hover {
 
 .titleArt {
   margin-top: 25px;
-  font-size: large;
-  font-weight: bolder;
+  font-size: 25px;
 }
 
 .titleArt a:hover {
