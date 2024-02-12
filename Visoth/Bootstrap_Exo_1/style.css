@@ -6,3 +6,14 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+ion-icon {
+    width: 32px;
+    height: 32px;
+    color: blue;
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+}
