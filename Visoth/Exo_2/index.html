@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>EXERCIE 2</title>
-</head>
-<body>
-    
+    <title>EXERCICE 2</title>
+  </head>
+  <body>
     <main>
+      <!-- ####################### NAVIGATION ########################################## -->
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container d-flex flex-column pt-5">
+          <a class="navbar-brand m-0 p-0" href="#"
+            ><img src="./img/imgNav.png" alt="" class="img-fluid"
+          /></a>
+          <!-- ##################################################### -->
+          <button
+            class="navbar-toggler my-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ##################################################### -->
+          <div class="collapse navbar-collapse pt-5" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-between">
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="#">Our Hotel</a>
+              </li>
+              <!-- ###############################################"" -->
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Rooms & Rates</a
+                >
+              </li>
+              <!-- #####################################################"" -->
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Facilities</a>
+              </li>
+              <!-- #################################################### -->
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item px-5 text-center">
+                <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+          <!-- ######################################################## -->
+        </div>
+      </nav>
 
+      <!-- ################################################# SEARCH BAR ################################################## -->
+      <section class="py-5 bg-dark d-flex justify-content-center">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dropdown">
+              <a
+                class="btn btn-light border rounded dropdown-toggle px-5 py-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Select a city
+              </a>
 
-
-
-
-
-
-
-
-
-
-
-
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tokyo</a></li>
+                <li><a class="dropdown-item" href="#">Rome</a></li>
+                <li><a class="dropdown-item" href="#">Athènes</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="border rounded px-5 py-3"
+            />
+          </div>
+          <div class="col-md-3">
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="border rounded px-5 py-3"
+            />
+          </div>
+          <div class="col-md-3">
+            <button class="rounded px-5 py-2 bg-warning text-white">
+              Check availabilty
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ############################################################## SCRIPTS #################################################################### -->
@@ -42,5 +120,14 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-</body>
+    <!-- ################################################################################ -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

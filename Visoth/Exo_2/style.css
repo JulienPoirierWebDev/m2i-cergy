@@ -6,3 +6,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+ion-icon {
+    color: orange;
+    width: 32px;
+    height: 32px;
+}
