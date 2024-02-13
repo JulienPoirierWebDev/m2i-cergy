@@ -62,7 +62,11 @@
             </button>
           </div>
           <div class="col-md-6 mt-5 d-flex justify-content-end">
-            <img src="./img/johnDoe.png" alt="John DOE" />
+            <img
+              src="./img/johnDoe.png"
+              alt="John DOE"
+              class="object-fit-fill img-fluid"
+            />
           </div>
         </div>
       </section>
@@ -188,7 +192,11 @@
               </div>
             </div>
             <div class="col-md-5 d-flex justify-content-end my-auto">
-              <img src="./img/img1.png" alt="" />
+              <img
+                src="./img/img1.png"
+                alt=""
+                class="object-fit-fill img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -199,7 +207,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5 d-flex justify-content-start my-auto">
-              <img src="./img/img2.png" alt="" />
+              <img
+                src="./img/img2.png"
+                alt=""
+                class="object-fit-fill img-fluid"
+              />
             </div>
             <div class="col-md-7 my-5">
               <!-- ########################################## -->
@@ -399,7 +411,11 @@
             <div class="col-md-5 py-5">
               <h2>Un projet de création Web ?</h2>
               <p>Allons en discuter autour d'un café</p>
-              <img src="./img/contact.png" alt="" />
+              <img
+                src="./img/contact.png"
+                alt=""
+                class="object-fit-fill img-fluid"
+              />
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-6 py-5">
@@ -437,12 +453,12 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Example textarea</label
+                <label for="message" class="form-label"
+                  >Votre message</label
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="message"
                   rows="3"
                 ></textarea>
               </div>
@@ -458,15 +474,23 @@
       </section>
 
       <!-- ############################# FOOTER ######################################### -->
-      <footer class="container d-flex justify-content-between my-5">
-        <a class="navbar-brand" href="#"
-          ><button type="button" class="btn btn-primary">JOHN</button>DOE</a
-        >
-        <a href="#" class="text-secondary">Mentions légales</a>
-        <div class="d-flex">
-          <ion-icon name="logo-linkedin" class="text-secondary"></ion-icon>
-          <ion-icon name="logo-instagram" class="text-secondary"></ion-icon>
-          <ion-icon name="logo-twitter" class="text-secondary"></ion-icon>
+      <footer class="container my-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12 my-auto">
+            <a class="navbar-brand d-flex justify-content-start" href="#"
+              ><button type="button" class="btn btn-primary">JOHN</button>DOE</a
+            >
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 my-auto">
+            <a href="#" class="text-secondary d-flex justify-content-center">Mentions légales</a>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 my-auto">
+            <div class="d-flex justify-content-end">
+              <ion-icon name="logo-linkedin" class="text-secondary"></ion-icon>
+              <ion-icon name="logo-instagram" class="text-secondary"></ion-icon>
+              <ion-icon name="logo-twitter" class="text-secondary"></ion-icon>
+            </div>
+          </div>
         </div>
       </footer>
     </main>
