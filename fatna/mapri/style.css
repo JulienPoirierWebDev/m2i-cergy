@@ -1,0 +1,47 @@
+*{
+  margin : 0;
+  padding :0;
+  box-sizing: border-box;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li{
+  list-style : none;
+  
+}
+
+header div img{
+  max-width : 100%;
+}
+
+h2{
+  text-align: center;
+}
+
+
+#section1 div{
+ padding : 30px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height : 160px;
+}
+
+#section1 div:nth-child(even){
+  background: #fafad2;
+}
+
+#section1 div:nth-child(odd){
+  background-color: #cccccc;
+  color : #a0a0a0;
+  font-size : 40px;
+}
+
+
+
+
