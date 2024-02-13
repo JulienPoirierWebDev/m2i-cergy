@@ -9,16 +9,18 @@
 <script type="module" src="main.js"></script>
   </head>
   <body class="scroll-smooth font-Karla">
-    <header class="flex justify-between bg-white z-10 fixed w-screen px-28">
-      <img src="images/logo.svg" alt="logo" class="logo p-10">
-      <nav>
-        <ul class="flex  items-center justify-around gap-5">
-          <li><a href="#more" class="uppercase">How we work</a></li>
-          <li><a href="#" class="uppercase">Blog</a></li>
-          <li><a href="#" class="uppercase">Account</a></li>
-          <li><button class="border px-5 py-2 my-5 uppercase">View plans</button></li>
-        </ul>
-      </nav>
+    <header class="bg-white z-10 fixed w-screen">
+      <div class="flex justify-between z-10 px-20 mx-9">
+        <img src="images/logo.svg" alt="logo" class="logo p-10">
+        <nav>
+          <ul class="flex items-center justify-around gap-5">
+            <li><a href="#more" class="uppercase">How we work</a></li>
+            <li><a href="#" class="uppercase">Blog</a></li>
+            <li><a href="#socials" class="uppercase">Account</a></li>
+            <li><button class="border border-black px-5 py-2 my-5 uppercase">View plans</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="hero" class="min-h-screen text-white">
@@ -29,59 +31,59 @@
             <p class="text-xl">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
             <button class="border px-5 py-2 my-5 uppercase">View plans</button>
           </article>
-            <img src="images/image-intro-desktop.jpg" alt="A Family walking towards left" class="absolute bottom-8 right-3 max-w-none -translate-x-1/2 -translate-y-3">
-            <img src="images/bg-pattern-intro-left-desktop.svg" alt="A Family walking towards left" class="absolute bottom-8 left-0 max-w-none">
-          <img src="images/bg-pattern-intro-right-desktop.svg" alt="A Family walking towards left" class="absolute top-0 right-0 z-0">
+            <img src="images/image-intro-desktop.jpg" alt="A Family walking towards left" class="absolute bottom-8 right-3 max-w-none -translate-x-1/2 -translate-y-3 xs:static xs:right:0 xs:center">
+            <img src="images/bg-pattern-intro-left-desktop.svg" alt="" class="absolute bottom-8 left-0 max-w-none">
+          <img src="images/bg-pattern-intro-right-desktop.svg" alt="" class="absolute top-0 right-0 z-0">
         </div>
       </section>
-      <section id="about">
-        <hr class="mt-[10em] ml-[8%] w-36 pb-36">
-        <h2 class="text-7xl ml-[8%]">We’re different</h2>
-        <article class="cards flex space-around ml-[8%]">
-          <figure class="m-20 text-center">
-            <img class="center mx-auto" src="images/icon-snappy-process.svg" alt="Lighting bolt icon">
+      <section id="about" class="m-auto w-[84%]">
+        <hr class="mt-[10em] w-36 mb-28 border-black">
+        <h2 class="text-7xl font-DM">We’re different</h2>
+        <article class="cards flex space-around  gap-56">
+          <figure class="my-20">
+            <img src="images/icon-snappy-process.svg" alt="Lighting bolt icon">
             <figcaption class="text">
-              <h3 class="headings font-DM">Snappy Process</h3>
+              <h3 class="headings text-2xl my-3">Snappy Process</h3>
               <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
             </figcaption>
           </figure>
-          <figure class="m-20 text-center">
-            <img class="center mx-auto" src="images/icon-affordable-prices.svg" alt="Dollar icon">
+          <figure class="my-20">
+            <img src="images/icon-affordable-prices.svg" alt="Dollar icon">
             <figcaption class="text">
-              <h3>Affordable Prices</h3>
+              <h3 class="headings text-2xl my-3">Affordable Prices</h3>
               <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
             </figcaption>
           </figure>
-          <figure class="m-20 text-center">
-            <img class="center mx-auto" src="images/icon-people-first.svg" alt="People illustration">
+          <figure class="my-20">
+            <img src="images/icon-people-first.svg" alt="People illustration">
             <figcaption class="text">
-              <h3>People First</h3>
+              <h3 class="headings text-2xl my-3">People First</h3>
               <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
             </figcaption>
           </figure>
         </article>
       </section>
-      <section id="more" class="bg-gradient flex space-around m-auto w-9/12 text-white">
+      <section id="more" class="bg-gradient flex space-around m-auto w-[84%] text-white">
         <h2 class="text-7xl py-20 ml-20">Find out more about how we work</h2>
         <button class="border-2 relative left-[15vw] top-[17vh] w-[40vw] h-20 text-5xl z-10">How we work</button>
         <img src="images/bg-pattern-how-we-work-desktop.svg" alt="A Family walking towards left" class="relative left-[0] m-h-100">
       </section>
     </main>
-    <footer class="w-screen py-5 my-36 bg-grayish m-w-screen;">
-      <article id="socials" class="flex justify-between w-screen px-28">
-        <img class="absolute left-0" src="images/bg-pattern-footer-desktop.svg" alt="">
-        <img src="images/logo.svg" alt="Logo Insure" class="logo w-100">
-        <aside class="flex space-between">
+    <footer class="mt-36 bg-grayish m-auto w-[84%] bg-[aliceblue]">
+      <img class="absolute left-0" src="images/bg-pattern-footer-desktop.svg" alt="">
+      <article id="socials" class="flex justify-between z-10">
+        <img src="images/logo.svg" alt="Logo Insure">
+        <aside class="flex">
           <img class="px-2" src="images/icon-facebook.svg" alt="Facebook" class="logo">
           <img class="px-2" src="images/icon-twitter.svg" alt="Twitter" class="logo">
           <img class="px-2" src="images/icon-pinterest.svg" alt="Pinterest" class="logo">
           <img class="px-2" src="images/icon-instagram.svg" alt="Instagram" class="logo">
         </aside>
       </article>
-      <hr class="mt-5 ml-[8%] w-[85vw]" >
-      <article class="flex justify-between bg-grayish z-10 w-screen px-28 py-24">
+      <hr class="mt-10 mx-auto w-[90%] border-black" >
+      <article class="flex justify-between bg-grayish z-10 py-10">
         <aside>
-          <h3>Our company</h3>
+          <h3 class="text-grayish text-2xl my-3">Our company</h3>
           <ul>
             <li><a href="#">How we work</a></li>
             <li><a href="#">Why Insure?</a></li>
@@ -90,7 +92,7 @@
           </ul>
         </aside>
         <aside class="">
-          <h3>Help me</h3>
+          <h3 class="text-grayish text-2xl my-3">Help me</h3>
         <ul>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Terms of use?</a></li>
@@ -99,23 +101,23 @@
         </ul>
         </aside>
         <aside>
-          <h3>Contact</h3>
+          <h3 class="text-grayish text-2xl my-3">Contact</h3>
           <ul>
-            <li><a href="">Sales</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Live chat</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Live chat</a></li>
           </ul>
         </aside>
         <aside>
-          <h3>Others</h3>
+          <h3 class="text-grayish text-2xl my-3">Others</h3>
           <ul>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Press</a></li>
-            <li><a href="">Licenses</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Licenses</a></li>
           </ul>
         </aside>
       </article>  
-      <div class="attribution backdrop-blur-lg shadow-xl p-5">
+      <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://mistertea.fr">Ruben &copy; mistertea.fr</a>.
       </div>

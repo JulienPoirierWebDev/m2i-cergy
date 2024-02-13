@@ -22,9 +22,10 @@
 }
 .headings{
   font-weight: var(--regular);
-  font-family: "DM Serif Display";
+  font-family: "DM";
 }
 .bg-grayish{ background : var(--VeryLightGray);}
+.text-grayish{ color : var(--GrayishBlue);}
 .bg-veryDarkViolet{
   background: var(--GrayishBlue);
 }
